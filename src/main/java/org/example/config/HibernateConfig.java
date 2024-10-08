@@ -1,7 +1,6 @@
 package org.example.config;
 
 import jakarta.persistence.EntityManagerFactory;
-import org.example.entities.Person;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -32,7 +31,6 @@ public class HibernateConfig {
     // TODO: IMPORTANT: Add Entity classes here for them to be registered with Hibernate
     private static void getAnnotationConfiguration(Configuration configuration) {
         //configuration.addAnnotatedClass(User.class);
-        configuration.addAnnotatedClass(Person.class);  
     }
 
     private static EntityManagerFactory createEMF(boolean forTest, String DBName) {
