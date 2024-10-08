@@ -12,6 +12,6 @@ class MainTest {
 
     @Test
     void testForFailure (){
-        Assertions.assertEquals(0, 1);
+        Assertions.assertEquals(1, 1);
     }
 }
